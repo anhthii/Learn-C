@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(Windows) Launch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/a.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "externalConsole": true,
+      "customLaunchSetupCommands": [
+          { "text": "target-run", "description": "run target", "ignoreFailures": false }
+      ],
+      "launchCompleteCommand": "exec-run",
+      "linux": {
+          "MIMode": "gdb",
+          "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "osx": {
+          "MIMode": "lldb"
+      },
+      "windows": {
+          "MIMode": "gdb",
+          "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
+      }
+    },
+    {
+      "name": "(Windows) Attach",
+      "type": "cppvsdbg",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
+    }
+  ]
+}
