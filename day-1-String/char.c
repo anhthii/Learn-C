@@ -18,7 +18,7 @@ char * getString(int size) {
 
 
 void printString(char *string) {
-  printf("You enter the string: %s", string); // %s, with c is the pointer to the string array
+  printf("You enter the string: %s", string); // %s, s that turn a string array pointer to a sequence of characters
 }
 
 int main ()
