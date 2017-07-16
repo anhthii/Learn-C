@@ -3,6 +3,7 @@
     "xutility": "cpp",
     "xstring": "cpp",
     "utility": "cpp",
-    "xlocale": "cpp"
+    "xlocale": "cpp",
+    "stdio.h": "c"
   }
 }

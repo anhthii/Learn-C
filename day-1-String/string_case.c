@@ -13,4 +13,5 @@ int main()
     printf("%s\n", strupr(string2));
     getch();
     return 0;
+    
 }
